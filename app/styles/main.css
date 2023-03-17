@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Epilogue;
+  font-style: normal;
+  background: #FAF8F6;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header,
+main {
+  padding: 0 1.6rem;
+}
+
+header {
+  width: 100%;
+  height: 4.8rem;
+  margin-top: 2.4rem;
+  margin-bottom: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-logo {
+  width: 8.1rem;
+  height: 3.2rem;
+  background-image: url(/suite-landing/assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header .btn-header {
+  width: 18.2rem;
+  height: 4.8rem;
+  border: 1px solid #172339;
+  border-radius: 0.6rem;
+  background-color: #FAF8F6;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  color: #172339;
+}
+header .btn-header:hover {
+  cursor: pointer;
+  background: #172339;
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 68.9rem;
+    height: 5.6rem;
+    margin: 4rem 4rem 8rem 4rem;
+  }
+  header .btn-header {
+    width: 21.9rem;
+    height: 5.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    width: 111rem;
+    margin: 5rem auto 6.7rem auto;
+    padding: 0;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .intro {
+  width: 34.3rem;
+  height: 35.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  background-image: url(/suite-landing/assets/pattern-curved-line-1.svg);
+  background-repeat: no-repeat;
+  background-size: 15.1rem 1.9rem;
+  background-position: top 0 left 15rem;
+  margin-bottom: 5.5rem;
+}
+main h1 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -0.527778px;
+  color: #172339;
+  margin-bottom: 3.2rem;
+}
+main h1 span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -0.527778px;
+  color: #172339;
+  font-weight: 700;
+}
+main p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.0888889px;
+  color: #49566D;
+}
+main button {
+  width: 25.6rem;
+  height: 6.1rem;
+  background: #172339;
+  border-radius: 0.6rem;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  color: #FAF8F6;
+  border: none;
+  align-self: flex-start;
+}
+main button:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+}
+main .bg-leads .bg-img {
+  width: 34.3rem;
+  height: 24rem;
+  background-image: url(/suite-landing/assets/image-hero-landscape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 5.6rem;
+}
+main .bg-leads .leads {
+  width: 34.4rem;
+  height: 31.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  margin-bottom: 5.6rem;
+}
+main .bg-leads .leads h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #172339;
+}
+main .bg-leads .leads p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #49566D;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 0 4rem;
+    row-gap: 3.3rem;
+  }
+  main .intro {
+    position: relative;
+    z-index: 2;
+    width: 57.3rem;
+    height: 43rem;
+    background-size: 23.1rem 2.9rem;
+    background-position: top 0 left 23rem;
+    margin-top: 8rem;
+  }
+  main .intro .text {
+    padding-right: 4rem;
+  }
+  main .intro h1 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.777778px;
+    color: #172339;
+  }
+  main .intro h1 span {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.777778px;
+    color: #172339;
+    font-weight: 700;
+  }
+  main .intro p {
+    width: 35rem;
+  }
+  main .bg-leads {
+    grid-row: 1/2;
+    grid-column: 2/2;
+    margin-top: 31rem;
+    margin-left: -12rem;
+    position: relative;
+    z-index: 0;
+  }
+  main .bg-leads .bg-img {
+    width: 28.1rem;
+    height: 48.2rem;
+    background-image: url(/suite-landing/assets/image-hero-portrait.png);
+    margin-left: 17rem;
+    margin-top: -10rem;
+  }
+  main .bg-leads .leads {
+    flex-direction: row;
+    width: 68.9rem;
+    height: 8.3rem;
+    margin-left: -23rem;
+  }
+  main .bg-leads .leads div {
+    width: 22.3rem;
+    height: 8.3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    width: 111rem;
+    height: 60rem;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 40.4rem;
+  }
+  main .intro {
+    width: 63.5rem;
+    height: 50.5rem;
+    padding-right: 2rem;
+    margin-top: 35rem;
+    background-size: 28.7rem 3.6rem;
+    background-position: top 0rem left 28rem;
+  }
+  main .intro h1 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -1px;
+    color: #172339;
+  }
+  main .intro h1 span {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -1px;
+    color: #172339;
+    font-weight: 700;
+  }
+  main .intro p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1px;
+  }
+  main .intro .text {
+    width: 63.5rem;
+    padding: 0;
+  }
+  main button {
+    margin-left: -1rem;
+  }
+  main .bg-leads {
+    width: 63.6rem;
+    height: 60rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 9.6rem;
+  }
+  main .bg-leads .bg-img {
+    margin: 0;
+    margin-left: 3rem;
+    width: 35rem;
+    height: 60rem;
+    background-image: url(/suite-landing/assets/image-hero-portrait@2x.png);
+  }
+  main .bg-leads .leads {
+    flex-direction: column;
+    width: 19rem;
+    height: 37.5rem;
+  }
+}
+footer {
+  width: 37.5rem;
+  height: 103.5rem;
+  background: #F3EDE7;
+  margin: 0 auto;
+  background: #F3EDE7;
+}
+footer .hero {
+  width: 100%;
+  height: 74.8rem;
+  background: #172339;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 25rem;
+  padding-top: 27.8rem;
+}
+footer .hero .hero-img {
+  width: 25.3rem;
+  height: 40.2rem;
+  position: absolute;
+  left: 7rem;
+  top: -17rem;
+}
+footer .hero .curve {
+  width: 4.927rem;
+  height: 4rem;
+  margin: 0 auto;
+  background-image: url(/suite-landing/assets/pattern-curved-line-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 3.7rem;
+}
+footer .hero .hero-text {
+  width: 34.3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+footer .hero h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.416667px;
+  color: #FAF8F6;
+}
+footer .hero h2 span {
+  font-weight: 700;
+}
+footer .hero p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.09px;
+  color: #F3EDE7;
+}
+footer h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  color: #FAF8F6;
+}
+footer h3 span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  color: #49566D;
+  color: #F3EDE7;
+}
+footer .icons {
+  width: 12.5rem;
+  height: 15rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5.6rem;
+}
+footer .icons p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.0833333px;
+  color: #49566D;
+}
+footer .icons .footer-logo {
+  width: 8.1rem;
+  height: 3.2rem;
+  background-image: url(/suite-landing/assets/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .icons .social-icons {
+  width: 11.6rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .icons .social-icons div {
+  width: 2rem;
+  height: 2rem;
+}
+footer .icons .social-icons .fb {
+  background-image: url(/suite-landing/assets/icon-facebook.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .icons .social-icons .fb:hover {
+  cursor: pointer;
+  filter: grayscale(1);
+}
+footer .icons .social-icons .twitter {
+  background-image: url(/suite-landing/assets/icon-twitter.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .icons .social-icons .twitter:hover {
+  cursor: pointer;
+  filter: grayscale(1);
+}
+footer .icons .social-icons .instagram {
+  background-image: url(/suite-landing/assets/icon-instagram.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .icons .social-icons .instagram:hover {
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+.hero-tablet {
+  display: none;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-mobile {
+    display: none;
+  }
+  .hero-tablet {
+    display: block;
+    width: 25.2rem;
+    height: 40.2rem;
+  }
+  footer {
+    width: 100%;
+    height: 64rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 27rem;
+  }
+  footer .hero {
+    position: absolute;
+    padding: 0 4rem;
+    width: 68.9rem;
+    top: -60rem;
+  }
+  footer .hero .hero-img {
+    top: -17rem;
+    left: 22rem;
+    z-index: 5;
+  }
+  footer .hero .hero-img .img-bg {
+    width: 19.7rem;
+    height: 19.7rem;
+    margin-top: -19.7rem;
+    background: #DB65E2;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(67.957px);
+    position: absolute;
+    z-index: -1;
+    margin-left: 1rem;
+  }
+  footer .hero .hero-text {
+    margin-top: 33rem;
+    width: 57.3rem;
+    height: 28.2rem;
+  }
+  footer .hero .curve {
+    position: absolute;
+    top: 27rem;
+    left: 32rem;
+  }
+  footer .icons {
+    align-self: flex-end;
+    flex-direction: revert;
+    width: 689px;
+    height: 3.2rem;
+    margin: 0;
+    justify-content: space-between;
+    margin-bottom: 7.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-tablet {
+    display: none;
+  }
+  .hero-desktop {
+    display: block;
+    width: 37.5rem;
+    height: 60rem;
+  }
+  footer {
+    height: 46.4rem;
+    margin-top: 55rem;
+  }
+  footer .hero {
+    top: -50rem;
+    width: 111rem;
+    height: 54.5rem;
+  }
+  footer .hero .hero-img {
+    width: 37.5rem;
+    height: 60rem;
+    top: -5.5rem;
+    left: 11.2rem;
+  }
+  footer .hero .hero-img .img-bg {
+    width: 29.4rem;
+    height: 29.4rem;
+    margin-left: 3rem;
+    margin-top: -36rem;
+  }
+  footer .hero .curve {
+    width: 6.4rem;
+    height: 5.2rem;
+    top: 17rem;
+    left: 53rem;
+  }
+  footer .hero .hero-text {
+    margin: 0;
+    width: 35rem;
+    height: 36.9rem;
+    margin-left: 60rem;
+    margin-top: 8.8rem;
+  }
+  footer .hero .hero-text h2 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #FAF8F6;
+  }
+  footer .hero .hero-text p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    color: #F3EDE7;
+  }
+  footer .icons {
+    width: 111rem;
+  }
+}/*# sourceMappingURL=main.css.map */

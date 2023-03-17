@@ -1,0 +1,235 @@
+@import 'fonts';
+@import 'variables';
+footer {
+    width: 37.5rem;
+    height: 103.5rem;
+    background: #F3EDE7;
+    margin: 0 auto;
+    .hero {
+        width: 100%;
+        height: 74.8rem;
+        background: #172339;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 25rem;
+        padding-top: 27.8rem;
+        .hero-img {
+            width: 25.3rem;
+            height: 40.2rem;
+            position: absolute;
+            left: 7rem;
+            top: -17rem;
+        }
+        .curve {
+            width: 4.927rem;
+            height: 4rem;
+            margin: 0 auto;
+            background-image: url(/suite-landing/assets/pattern-curved-line-2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 3.7rem;
+        }
+        .hero-text {
+            width: 34.3rem;
+            margin: 0 auto;
+            @include flex-col;
+            gap: 4rem;
+        }
+        h2 {
+            @include footer-h2;
+            span {
+                @include footer-h2-bold;
+            }
+        }
+        p {
+            @include footer-p;
+        }
+    }
+    h3 {
+        @include footer-h3;
+        span {
+            @include leads-p;
+            color: #F3EDE7;
+        }
+    }
+    background: #F3EDE7;
+    .icons {
+        width: 12.5rem;
+        height: 15rem;
+        margin: 0 auto;
+        @include flex-col;
+        gap: 3rem;
+        margin-top: 5.6rem;
+        p {
+            @include copyright;
+        }
+        .footer-logo {
+            width: 8.1rem;
+            height: 3.2rem;
+            background-image: url(/suite-landing/assets/logo.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .social-icons {
+            width: 11.6rem;
+            height: 2rem;
+            @include flex-row;
+            div {
+                width: 2rem;
+                height: 2rem;
+            }
+            .fb {
+                background-image: url(/suite-landing/assets/icon-facebook.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                &:hover {
+                    cursor: pointer;
+                    filter: grayscale(1);
+                }
+            }
+            .twitter {
+                background-image: url(/suite-landing/assets/icon-twitter.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                &:hover {
+                    cursor: pointer;
+                    filter: grayscale(1);
+                }
+            }
+            .instagram {
+                background-image: url(/suite-landing/assets/icon-instagram.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                &:hover {
+                    cursor: pointer;
+                    filter: grayscale(1);
+                }
+            }
+        }
+    }
+}
+
+.hero-tablet {
+    display: none;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+// tablet version 
+@media screen and (min-width:768px) {
+    .hero-mobile {
+        display: none;
+    }
+    .hero-tablet {
+        display: block;
+        width: 25.2rem;
+        height: 40.2rem;
+    }
+    footer {
+        width: 100%;
+        height: 64rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 27rem;
+        .hero {
+            position: absolute;
+            padding: 0 4rem;
+            width: 68.9rem;
+            top: -60rem;
+            .hero-img {
+                top: -17rem;
+                left: 22rem;
+                z-index: 5;
+                .img-bg {
+                    width: 19.7rem;
+                    height: 19.7rem;
+                    margin-top: -19.7rem;
+                    background: #DB65E2;
+                    mix-blend-mode: normal;
+                    opacity: 0.48;
+                    filter: blur(67.957px);
+                    position: absolute;
+                    z-index: -1;
+                    margin-left: 1rem;
+                }
+            }
+            .hero-text {
+                margin-top: 33rem;
+                width: 57.3rem;
+                height: 28.2rem;
+            }
+            .curve {
+                position: absolute;
+                top: 27rem;
+                left: 32rem;
+            }
+        }
+        .icons {
+            align-self: flex-end;
+            flex-direction: revert;
+            width: 689px;
+            height: 3.2rem;
+            margin: 0;
+            justify-content: space-between;
+            margin-bottom: 7.2rem;
+        }
+    }
+}
+
+//desktop version
+@media screen and (min-width:1440px) {
+    .hero-tablet {
+        display: none;
+    }
+    .hero-desktop {
+        display: block;
+        width: 37.5rem;
+        height: 60rem;
+    }
+    footer {
+        height: 46.4rem;
+        margin-top: 55rem;
+        .hero {
+            top: -50rem;
+            width: 111rem;
+            height: 54.5rem;
+            .hero-img {
+                width: 37.5rem;
+                height: 60rem;
+                top: -5.5rem;
+                left: 11.2rem;
+                .img-bg {
+                    width: 29.4rem;
+                    height: 29.4rem;
+                    margin-left: 3rem;
+                    margin-top: -36rem;
+                }
+            }
+            .curve {
+                width: 6.4rem;
+                height: 5.2rem;
+                top: 17rem;
+                left: 53rem;
+            }
+            .hero-text {
+                margin: 0;
+                width: 35rem;
+                height: 36.9rem;
+                margin-left: 60rem;
+                margin-top: 8.8rem;
+                h2 {
+                    @include footer-h2-desktop;
+                }
+                p {
+                    @include footer-p-desktop;
+                }
+            }
+        }
+        .icons {
+            width: 111rem;
+        }
+    }
+}

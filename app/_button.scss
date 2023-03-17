@@ -1,0 +1,13 @@
+@import 'fonts';
+@import 'variables';
+@mixin btn-intro {
+    width: 25.6rem;
+    height: 6.1rem;
+    background: #172339;
+    border-radius: 0.6rem;
+    @include btn-intro-text;
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+    }
+}

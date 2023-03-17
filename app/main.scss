@@ -1,0 +1,10 @@
+@use 'reset';
+@use 'fonts';
+@use 'globals';
+//header
+@use 'header';
+//main
+@use '_main';
+//footer
+@use 'footer';
+//media queries
